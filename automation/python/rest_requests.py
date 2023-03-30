@@ -35,7 +35,7 @@ print(r_post.status_code)
 
 # SAMPLE 2 : Album json file data POST to typicode service.
 URL = "https://jsonplaceholder.typicode.com/albums"
-files = {'file': open('selam.json', 'rb')}
+files = {'file': open('data.json', 'rb')}
 r_post = requests.post(url=URL, files=files)
 print(r_post.status_code)
 print(r_post.content)  # To see the change
