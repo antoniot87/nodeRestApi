@@ -28,7 +28,7 @@ URL = "https://jsonplaceholder.typicode.com/albums"
 json = {
     "userId": 20,
     "id": 201,
-    "title": "Hi alimesut.wordpress.com readers..."
+    "title": "Hi 295devops.wordpress.com readers..."
 }
 r_post = requests.post(url=URL, json=json)
 print(r_post.status_code)
@@ -52,7 +52,7 @@ print('\n*********************\n')
 
 # SAMPLE 1 : PATCH Best Practice
 URL = "https://jsonplaceholder.typicode.com/users/2"
-u_value = '{"email":"ali@mesut.com","address":{"city":"Diyarbakir"}}'
+u_value = '{"email":"roxs@295devops.com","address":{"city":"Resistencia"}}'
 r_patch= requests.patch(url=URL, data=u_value)
 print(r_patch.status_code)
 print(r_patch.content)  # To see the change
@@ -65,8 +65,8 @@ data = r_get.json()
 
 print(data['email'])
 print(data['address']['city'])
-data['email'] = 'ali@mesut.com'
-data['address']['city'] = 'Diyarbakir'
+data['email'] = 'roxs@295devops.com'
+data['address']['city'] = 'Resistencia'
 print(data['email'])
 print(data['address']['city'])
 
@@ -79,7 +79,7 @@ print('\n*********************\n')
 
 # SAMPLE 1 : Spesific value update with PUT
 URL = "https://jsonplaceholder.typicode.com/users/2"
-u_value = '{"email":"ali@mesut.com","address":{"city":"Diyarbakir"}}'
+u_value = '{"email":"roxs@295devops.com","address":{"city":"Resistencia"}}'
 r_put = requests.put(url=URL, data=u_value)
 print(r_put.status_code)
 print('\n*********************\n')
